@@ -1,18 +1,37 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <button @click="showAddress">显示地址</button>
+    <Address :showChose="isShow" @closeAddress="closeAddress" />
+    <TreeTable :data="list" />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue';
+import Address from '@/components/Address';
+import TreeTable from '@/components/TreeTable';
 
+import list from '@/data/TreeTable.json';
 export default {
   name: 'Home',
   components: {
-    HelloWorld,
+    TreeTable,
+    Address,
+  },
+  data() {
+    return {
+      isShow: false,
+      list: list,
+    };
+  },
+  methods: {
+    showAddress() {
+      this.isShow = true;
+    },
+    closeAddress() {
+      this.isShow = false;
+    },
   },
 };
 </script>

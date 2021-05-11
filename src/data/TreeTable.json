@@ -1,0 +1,83 @@
+{
+  "columns": [
+    {
+      "key": "monthCount",
+      "name": "本月发生数"
+    },
+    {
+      "key": "lastMonthCount",
+      "name": "上月发生数"
+    },
+    {
+      "key": "total",
+      "name": "上月发生数1"
+    }
+  ],
+  "list": [
+    {
+      "code": "6001.07",
+      "name": "市场成本",
+      "extends": [
+        {
+          "key": "monthCount",
+          "name": "本月发生数",
+          "value": "1231"
+        },
+        {
+          "key": "lastMonthCount",
+          "name": "上月发生数",
+          "value": "1232"
+        },
+        {
+          "key": "total",
+          "name": "上月发生数1",
+          "value": "1232000"
+        }
+      ],
+      "children": [
+        {
+          "code": "6001.07.01",
+          "name": "线下活动",
+          "extends": [
+            {
+              "key": "monthCount",
+              "name": "本月发生数",
+              "value": "1233"
+            },
+            {
+              "key": "lastMonthCount",
+              "name": "上月发生数",
+              "value": "1234"
+            },
+            {
+              "key": "total",
+              "name": "上月发生数1",
+              "value": "12320002222222"
+            }
+          ]
+        },
+        {
+          "code": "6001.07.02",
+          "name": "线下活动1",
+          "extends": [
+            {
+              "key": "monthCount",
+              "name": "本月发生数",
+              "value": "123311111"
+            },
+            {
+              "key": "lastMonthCount",
+              "name": "上月发生数",
+              "value": "123422222"
+            },
+            {
+              "key": "total",
+              "name": "上月发生数1",
+              "value": "1232000555555"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
