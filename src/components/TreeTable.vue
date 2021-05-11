@@ -37,9 +37,7 @@ export default {
       required: true,
     },
   },
-  mounted() {
-    console.log(this.data);
-  },
+  mounted() {},
   methods: {
     handleRowClick(row) {
       if (row.children) {
